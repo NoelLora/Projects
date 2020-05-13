@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1B5089A246BA87500D2D25E /* BrickGame WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B1B50899246BA87500D2D25E /* BrickGame WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1B508A0246BA87500D2D25E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B5089E246BA87500D2D25E /* Interface.storyboard */; };
+		B1B508A2246BA87600D2D25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B508A1246BA87600D2D25E /* Assets.xcassets */; };
+		B1B508A9246BA87600D2D25E /* BrickGame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B1B508A8246BA87600D2D25E /* BrickGame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1B508AE246BA87600D2D25E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B508AD246BA87600D2D25E /* ContentView.swift */; };
+		B1B508B0246BA87600D2D25E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B508AF246BA87600D2D25E /* HostingController.swift */; };
+		B1B508B2246BA87600D2D25E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B508B1246BA87600D2D25E /* ExtensionDelegate.swift */; };
+		B1B508B4246BA87600D2D25E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B508B3246BA87600D2D25E /* NotificationController.swift */; };
+		B1B508B6246BA87600D2D25E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B508B5246BA87600D2D25E /* NotificationView.swift */; };
+		B1B508B8246BA87600D2D25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B508B7246BA87600D2D25E /* Assets.xcassets */; };
+		B1B508BB246BA87600D2D25E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B508BA246BA87600D2D25E /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1B5089B246BA87500D2D25E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1B5088F246BA87500D2D25E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B50898246BA87500D2D25E;
+			remoteInfo = "BrickGame WatchKit App";
+		};
+		B1B508AA246BA87600D2D25E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1B5088F246BA87500D2D25E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B508A7246BA87600D2D25E;
+			remoteInfo = "BrickGame WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1B508C3246BA87600D2D25E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1B508A9246BA87600D2D25E /* BrickGame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B508C7246BA87600D2D25E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B1B5089A246BA87500D2D25E /* BrickGame WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B1B50895246BA87500D2D25E /* BrickGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B50899246BA87500D2D25E /* BrickGame WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrickGame WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B5089F246BA87500D2D25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B1B508A1246BA87600D2D25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1B508A3246BA87600D2D25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B508A8246BA87600D2D25E /* BrickGame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BrickGame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B508AD246BA87600D2D25E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1B508AF246BA87600D2D25E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		B1B508B1246BA87600D2D25E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B1B508B3246BA87600D2D25E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B1B508B5246BA87600D2D25E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B1B508B7246BA87600D2D25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1B508BA246BA87600D2D25E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1B508BC246BA87600D2D25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B508BD246BA87600D2D25E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1B508A5246BA87600D2D25E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1B5088E246BA87500D2D25E = {
+			isa = PBXGroup;
+			children = (
+				B1B5089D246BA87500D2D25E /* BrickGame WatchKit App */,
+				B1B508AC246BA87600D2D25E /* BrickGame WatchKit Extension */,
+				B1B50896246BA87500D2D25E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1B50896246BA87500D2D25E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1B50895246BA87500D2D25E /* BrickGame.app */,
+				B1B50899246BA87500D2D25E /* BrickGame WatchKit App.app */,
+				B1B508A8246BA87600D2D25E /* BrickGame WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1B5089D246BA87500D2D25E /* BrickGame WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B1B5089E246BA87500D2D25E /* Interface.storyboard */,
+				B1B508A1246BA87600D2D25E /* Assets.xcassets */,
+				B1B508A3246BA87600D2D25E /* Info.plist */,
+			);
+			path = "BrickGame WatchKit App";
+			sourceTree = "<group>";
+		};
+		B1B508AC246BA87600D2D25E /* BrickGame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B1B508AD246BA87600D2D25E /* ContentView.swift */,
+				B1B508AF246BA87600D2D25E /* HostingController.swift */,
+				B1B508B1246BA87600D2D25E /* ExtensionDelegate.swift */,
+				B1B508B3246BA87600D2D25E /* NotificationController.swift */,
+				B1B508B5246BA87600D2D25E /* NotificationView.swift */,
+				B1B508B7246BA87600D2D25E /* Assets.xcassets */,
+				B1B508BC246BA87600D2D25E /* Info.plist */,
+				B1B508BD246BA87600D2D25E /* PushNotificationPayload.apns */,
+				B1B508B9246BA87600D2D25E /* Preview Content */,
+			);
+			path = "BrickGame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B1B508B9246BA87600D2D25E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1B508BA246BA87600D2D25E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1B50894246BA87500D2D25E /* BrickGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B508C8246BA87600D2D25E /* Build configuration list for PBXNativeTarget "BrickGame" */;
+			buildPhases = (
+				B1B50893246BA87500D2D25E /* Resources */,
+				B1B508C7246BA87600D2D25E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1B5089C246BA87500D2D25E /* PBXTargetDependency */,
+			);
+			name = BrickGame;
+			productName = BrickGame;
+			productReference = B1B50895246BA87500D2D25E /* BrickGame.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B1B50898246BA87500D2D25E /* BrickGame WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B508C4246BA87600D2D25E /* Build configuration list for PBXNativeTarget "BrickGame WatchKit App" */;
+			buildPhases = (
+				B1B50897246BA87500D2D25E /* Resources */,
+				B1B508C3246BA87600D2D25E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1B508AB246BA87600D2D25E /* PBXTargetDependency */,
+			);
+			name = "BrickGame WatchKit App";
+			productName = "BrickGame WatchKit App";
+			productReference = B1B50899246BA87500D2D25E /* BrickGame WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B1B508A7246BA87600D2D25E /* BrickGame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B508C0246BA87600D2D25E /* Build configuration list for PBXNativeTarget "BrickGame WatchKit Extension" */;
+			buildPhases = (
+				B1B508A4246BA87600D2D25E /* Sources */,
+				B1B508A5246BA87600D2D25E /* Frameworks */,
+				B1B508A6246BA87600D2D25E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BrickGame WatchKit Extension";
+			productName = "BrickGame WatchKit Extension";
+			productReference = B1B508A8246BA87600D2D25E /* BrickGame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1B5088F246BA87500D2D25E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Noel Lora";
+				TargetAttributes = {
+					B1B50894246BA87500D2D25E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B1B50898246BA87500D2D25E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B1B508A7246BA87600D2D25E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B1B50892246BA87500D2D25E /* Build configuration list for PBXProject "BrickGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1B5088E246BA87500D2D25E;
+			productRefGroup = B1B50896246BA87500D2D25E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1B50894246BA87500D2D25E /* BrickGame */,
+				B1B50898246BA87500D2D25E /* BrickGame WatchKit App */,
+				B1B508A7246BA87600D2D25E /* BrickGame WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1B50893246BA87500D2D25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B50897246BA87500D2D25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B508A2246BA87600D2D25E /* Assets.xcassets in Resources */,
+				B1B508A0246BA87500D2D25E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B508A6246BA87600D2D25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B508BB246BA87600D2D25E /* Preview Assets.xcassets in Resources */,
+				B1B508B8246BA87600D2D25E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1B508A4246BA87600D2D25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B508B0246BA87600D2D25E /* HostingController.swift in Sources */,
+				B1B508AE246BA87600D2D25E /* ContentView.swift in Sources */,
+				B1B508B4246BA87600D2D25E /* NotificationController.swift in Sources */,
+				B1B508B2246BA87600D2D25E /* ExtensionDelegate.swift in Sources */,
+				B1B508B6246BA87600D2D25E /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1B5089C246BA87500D2D25E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1B50898246BA87500D2D25E /* BrickGame WatchKit App */;
+			targetProxy = B1B5089B246BA87500D2D25E /* PBXContainerItemProxy */;
+		};
+		B1B508AB246BA87600D2D25E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1B508A7246BA87600D2D25E /* BrickGame WatchKit Extension */;
+			targetProxy = B1B508AA246BA87600D2D25E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1B5089E246BA87500D2D25E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1B5089F246BA87500D2D25E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1B508BE246BA87600D2D25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1B508BF246BA87600D2D25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1B508C1246BA87600D2D25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BrickGame WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FVY86P7249;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BrickGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noel.BrickGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		B1B508C2246BA87600D2D25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BrickGame WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FVY86P7249;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BrickGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noel.BrickGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		B1B508C5246BA87600D2D25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVY86P7249;
+				IBSC_MODULE = BrickGame_WatchKit_Extension;
+				INFOPLIST_FILE = "BrickGame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = noel.BrickGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		B1B508C6246BA87600D2D25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVY86P7249;
+				IBSC_MODULE = BrickGame_WatchKit_Extension;
+				INFOPLIST_FILE = "BrickGame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = noel.BrickGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		B1B508C9246BA87600D2D25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FVY86P7249;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noel.BrickGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1B508CA246BA87600D2D25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FVY86P7249;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = noel.BrickGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1B50892246BA87500D2D25E /* Build configuration list for PBXProject "BrickGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B508BE246BA87600D2D25E /* Debug */,
+				B1B508BF246BA87600D2D25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B508C0246BA87600D2D25E /* Build configuration list for PBXNativeTarget "BrickGame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B508C1246BA87600D2D25E /* Debug */,
+				B1B508C2246BA87600D2D25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B508C4246BA87600D2D25E /* Build configuration list for PBXNativeTarget "BrickGame WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B508C5246BA87600D2D25E /* Debug */,
+				B1B508C6246BA87600D2D25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B508C8246BA87600D2D25E /* Build configuration list for PBXNativeTarget "BrickGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B508C9246BA87600D2D25E /* Debug */,
+				B1B508CA246BA87600D2D25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1B5088F246BA87500D2D25E /* Project object */;
+}
