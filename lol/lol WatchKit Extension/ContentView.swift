@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, World! Theres a ton of filews in hrere and I hope tha ti will be able to create this app in the feature.")
+            .font(.callout)
+            .foregroundColor(Color.blue)
     }
 }
 
